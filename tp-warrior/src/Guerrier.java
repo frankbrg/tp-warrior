@@ -11,12 +11,12 @@ public class Guerrier {
     public Guerrier(String name){
 
         this.actions = new ArrayList<BehaviorAction>();
-        this.actions.add(new BehaviorAction(){
+        this.addAction(new BehaviorAction(){
             public void taper(){
                 System.out.println("Je suis "+name+" et je tape comme une buse");
             }
-        });
-        this.getActions().get(0).setName("default");
+        }).setName("default");
+
         this.name =name;
         this.lvl = 1;
         
@@ -50,13 +50,15 @@ public class Guerrier {
     }
 
     public void levelUp(){
-        this.addAction(new BehaviorAction(){
-            public void taper(){
-                System.out.println("Je suis "+name+" et je tape en faisant des moulinés stylés avec mon épée");
-            }
-        });
+
         this.lvl++;
+        
         if (lvl == 2) {
+            this.addAction(new BehaviorAction(){
+                public void taper(){
+                    System.out.println("Je suis "+name+" et je tape en faisant des moulinés stylés avec mon épée");
+                }
+            });
             this.addAction(new BehaviorAction(){
                 @Override
                 public void taper() {
