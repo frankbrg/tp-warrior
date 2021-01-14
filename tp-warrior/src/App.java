@@ -1,9 +1,4 @@
-package com.jad;
-
-
-
-public class Main {
-
+public class App {
     public static void main(String[] args) {
 
        Guerrier conan = new Guerrier("Conan");
@@ -24,9 +19,9 @@ public class Main {
 
 
 
-        Guerrier. shera = new Guerrier("Shera");
+        Guerrier shera = new Guerrier("Shera");
 
-        shera.levelup();
+        shera.levelUp();
 
         shera.taper(); // Afficher Je suis Shera et je tape en faisant des moulinés stylés avec mon épée.
 
