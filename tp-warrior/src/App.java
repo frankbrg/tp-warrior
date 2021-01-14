@@ -7,7 +7,7 @@ public class App {
 
        conan.levelUp();
 
-       conan.taper(); // Afficher Je suis Conan et je tape en faisant des moulinés stylés avec mon épée.
+       conan.taper(); // Afficher Je suis Conan et je tape en faisant des moulinés stylés avec mon épée...
 
         
 
